@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Camps extends Model
 {
     use HasFactory;
+    
 }
