@@ -34,6 +34,7 @@ Route::middleware(['auth'])->group(function(){
 
     //user Dashboard Routes
     Route::get('dashboard', [HomeController::class,'dashboard'])->name('dashboard');
+    Route::get('dashboard/checkout/invoice/{checkout}',[CheckoutController::class, 'invoice'])->name('user.checkout.invoice');
 
 });
 
